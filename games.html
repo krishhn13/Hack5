@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Mental Wellness Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Mental Wellness Hub</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="jokes.html">Jokes</a>
+            <a href="games.html">Games</a>
+            <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+            <button id="back-to-top" aria-label="Back to Top">⬆️</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="games">
+            <h2>Mood Match Game</h2>
+            <p>Match the emojis to boost your mood!</p>
+            <div id="game-board"></div>
+            <div id="game-score">Score: 0</div>
+            <div id="game-timer">Time: 60s</div>
+            <button id="restart-game">Naya Shuru Kar!</button>
+        </section>
+
+        <section class="games">
+            <h2>Emoji Guess</h2>
+            <p>Guess the mood from the hint!</p>
+            <div id="guess-hint"></div>
+            <div id="guess-options"></div>
+            <div id="guess-score">Score: 0</div>
+            <button id="restart-guess">Naya Shuru Kar!</button>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Mental Wellness Hub | Made with ❤️ by [Your Team Name]</p>
+        <div class="social-links">
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="GitHub">💻</a>
+            <a href="#" aria-label="Contact">✉️</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/games.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'925b01f70cbd53e8',t:'MTc0Mjg3MDA1MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

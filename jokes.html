@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes - Mental Wellness Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Mental Wellness Hub</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="jokes.html">Jokes</a>
+            <a href="games.html">Games</a>
+            <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+            <button id="back-to-top" aria-label="Back to Top">⬆️</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="jokes">
+            <h2>Hansi Ke Dhamake</h2>
+
+            <!-- Joke Generator -->
+            <div class="joke-generator">
+                <div class="joke-controls">
+                    <select id="joke-category" title ="Konsa Joke chahiye?">
+                        <option value="all">All Jokes</option>
+                        <option value="life">Life</option>
+                        <option value="friends">Friends</option>
+                        <option value="work">Work</option>
+                    </select>
+                    <div id="joke-progress">Jokes Seen: 0 / 15</div>
+                </div>
+                <div id="joke-display" class="joke-box"></div>
+                <div class="joke-actions">
+                    <button id="next-joke">Ek Aur Suna De!</button>
+                    <button id="favorite-joke">❤️ Save Favorite</button>
+                    <button id="share-joke">📤 Share Joke</button>
+                </div>
+                <div class="joke-rating">
+                    <p>Rate This Joke:</p>
+                    <div id="rating-stars">★★★★★</div>
+                </div>
+            </div>
+
+            <!-- Joke of the Day -->
+            <div class="joke-of-the-day">
+                <h3>Joke of the Day</h3>
+                <div id="daily-joke"></div>
+            </div>
+
+            <!-- Random Meme -->
+            <div class="random-meme">
+                <h3>Random Meme</h3>
+                <img id="meme-image" src="" alt="Random Meme" style="display: none;">
+                <p id="meme-fallback" style="display: none;">Meme nahi load hua, bhai!</p>
+                <button id="next-meme">Naya Meme Dekho!</button>
+            </div>
+
+            <!-- Favorites and History -->
+            <div class="joke-extras">
+                <div id="favorite-list"></div>
+                <div id="joke-history">
+                    <h3>Joke History</h3>
+                    <ul id="history-list"></ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Mental Wellness Hub | Made with ❤️ by [Your Team Name]</p>
+        <div class="social-links">
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="GitHub">💻</a>
+            <a href="#" aria-label="Contact">✉️</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/jokes.js"></script>
+</body>
+</html>
